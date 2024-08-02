@@ -93,3 +93,55 @@ nav ul li a:hover span{
     outline: none;
     border-radius: 5px;
 }
+
+
+
+
+
+/* Animations */
+.getAccess-button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getAccess-button span{
+    margin-left: 10px;
+    width: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.getAccess-button:hover span{
+    width: 30px;
+}
+
+.register-button{
+    position: relative;
+
+}
+.register-button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 2px solid #792cd4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: top 0.5s, left 0.5s;
+}
+
+.register-button:hover{
+    background: transparent;
+    border: 2px solid #792cd4;
+    color: #792cd4;
+    padding-top: 5px;
+}
+
+.register-button:hover::after{
+    top: 5px;
+    left: 5px;
+    box-sizing: content-box;
+}
