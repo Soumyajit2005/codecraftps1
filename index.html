@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Space+Grotesk:wght@300..700&display=swap');
+        </style>
+
+    <title>Game</title>
+  </head>
+  <body class="bg-[#030014]">
+
+    <nav class="navbar w-full flex flex-row justify-between z-[10] px-[25px] py-[20px]">
+      <div class="logo">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div class="navlinks font-[400] text-[20px] leading-[25.2px]">
+        <ul class="flex flex-row justify-between items-center gap-[36px] text-gray-100">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="registerButton">
+        <button class="p-2 bg-[#792CD4] text-white px-3 rounded">
+          Register
+        </button>
+      </div>
+    </nav>
+    <section
+      id="home"
+      class="home w-[100%] flex flex-col justify-center items-center mb-[10rem]"
+    >
+      <div
+        class="homeText text-white font-bold text-[141px] gap-[225px] flex flex-row justify-center items-center"
+      >
+        <span class="gun pl-[136px]">GUN</span>
+        <span class="shot">SHOT</span>
+      </div>
+      <div class="homeImage h-[261px]">
+        <img src="home.png" alt="homeImage" />
+      </div>
+
+
+      <div class="home-page-footer flex flex-row justify-center items-center">
+        <div class="game-text-home mr-[700px]">
+          <p class="text-white  font-[400] text-[18px] pb-[36px]">
+            The Gun Shot is a metaverse game developed by<br />
+            Extreme Games in this game you will feel the<br />
+            experience of being a gun shot.
+          </p>
+          <div class="buttons text-white">
+            <button class="p-2 bg-[#792CD4] text-white px-3 rounded text-[22px]">
+              Get Access
+            </button>
+            <button class="p-2 bg-[#792CD4] text-[#792cd4] px-3 rounded text-[22px] ml-[19px] bg-transparent border-solid border-2 border-[#792CD4]">
+              Vacancies
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="gunshot-text text-white flex flex-col justify-center items-center bg-gradient-to-l from-[#6424B9] p-4"
+        >
+          <strong>GUN SHOT</strong>
+          <span class="flex flex-row justify-center items-center gap-[10px]"
+            ><span class="completed font-[400] text-[26px]">Completed</span><span class="text-[26px] font-[700]">55%</span></span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="about w-[100%] h-[100vh] flex flex-row justify-between items-center px-[7rem] mt-8 mb-8"
+    >
+      <div class="left text-white">
+        <h2 class="text-[96px] font-[700] leading-[122.5px]">
+          Play<br />Gun Shot
+        </h2>
+        <h3 class="font-[400] text-[44px] leading-[56.14px]">
+          PLay Based On<br />Extreme GX
+        </h3>
+        <p>
+          The Gun Shot is a metaverse game developed by <br />Extreme Games in
+          this game you will feel the <br />
+          experience of being a gun shot.
+        </p>
+      </div>
+      <div class="right flex flex-row justify-center items-center">
+        <img src="about1.png" alt="about1" />
+        <img src="about2.png" alt="about2" />
+      </div>
+    </section>
+
+    <section id="games" class="games w-[100%] h-[100vh] mt-8 mb-8">
+        <h1 class="text-white font-bold text-[141px] text-center font-[700] text-[96px] leading-[122.5px] pb-6 ">GAMES</h1>
+        <div class="grid gap-4 grid-rows-2 grid-cols-3 m-auto w-[70%]">
+            <div class="row-span-2">
+                <img src="game1.png"  alt="game1">
+            </div>
+            <div class="row-span-1 col-span-1 flex flex-col justify-between items-center h-full">
+                <img src="game2.png" class="w-[284px] h-[204px]" alt="game2">
+                <img src="game3.png" class="w-[284px] h-[274px]" alt="game3">
+            </div>
+            <div class="col-span-1">
+                <img src="game4.png" alt="game4">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact w-[60%] m-auto h-[100vh] mb-8 mt-8">
+        <h1 class="font-[700] text-[96px] leading-[122.5px] text-center text-white">CONTACT</h1>
+        <form action="" class="flex flex-col justify-center items-center">
+            <input type="text" name="" id="" class="mt-[20px]" placeholder="Enter Your Name">
+            <input type="email" name="" id="" class="mt-[20px]" placeholder="Please Enter a Valid Email Adress">
+            <textarea name="" id="" class="mt-[20px]" placeholder="Comment" rows="8"></textarea>
+            <button type="submit" class="p-2 bg-[#792CD4] text-white rounded w-full mt-[20px] font-[400] text-[22px] leading-[28.07px]">Submit</button>
+        </form>
+    </section>
+  </body>
+</html>

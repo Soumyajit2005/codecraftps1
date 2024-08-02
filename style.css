@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.completed{
+    color: rgba(255, 255, 255, 0.62);
+}
+
+nav{
+    position: sticky !important;
+    top: 2px;
+    background: #42387016;
+}
+
+nav ul{
+    opacity: 0.6;
+}
+
+.homeImage img {
+  position: relative;
+  bottom: 322px;
+  z-index: -1;
+}
+
+/* Weight
+400
+Size
+141px
+Line height
+171.6px */
+
+.homeText {
+  font-family: "Keania One", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 171.6px;
+  font-size: 141px;
+  z-index: 2;
+}
+
+
+
+.gunshot-text strong{
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 62.07px;
+    font-family: "Keania One", sans-serif !important;
+}
+
+.right img{
+    margin: 25px;
+    width: 370px;
+}
+
+
+.contact form input, textarea{
+    background: transparent;
+    color: white !important;
+    width: 100%;
+    padding: 1.2rem !important;
+    border: 2px solid gray;
+    font-weight: 400;
+    font-size: 25px !important;
+    line-height: 31.9px;
+    outline: none;
+    border-radius: 5px;
+}
