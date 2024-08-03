@@ -38,13 +38,13 @@
       class="home w-[100%] flex flex-col justify-center items-center mb-[10rem]"
     >
       <div
-        class="homeText text-white font-bold text-[141px] gap-[225px] flex flex-row justify-center items-center"
+        class="homeText text-white font-bold text-[141px] gap-[225px] flex flex-row justify-center items-center appear"
       >
-        <span class="gun pl-[136px]">GUN</span>
-        <span class="shot">SHOT</span>
+        <span class="gun pl-[136px] translatexanimation">GUN</span>
+        <span class="shot translatexanimation">SHOT</span>
       </div>
       <div class="homeImage h-[261px]">
-        <img src="home.png" alt="homeImage" />
+        <img src="home.png" alt="homeImage" class="appear" />
       </div>
 
 
@@ -56,7 +56,7 @@
             experience of being a gun shot.
           </p>
           <div class="buttons text-white flex">
-            <button class="getAccess-button p-2 bg-[#792CD4] text-white px-3 rounded text-[22px]">
+            <button class="getAccess-button p-2 bg-[#792CD4] text-white px-3 rounded text-[22px] ">
               Get Access <span>&#10230;</span>
             </button>
             <button class="vacancies-button p-2 bg-[#792CD4] text-[#792cd4] px-3 rounded text-[22px] ml-[19px] bg-transparent border-solid border-2 border-[#792CD4]">
@@ -66,7 +66,7 @@
         </div>
 
         <div
-          class="gunshot-text text-white flex flex-col justify-center items-center bg-gradient-to-l from-[#6424B9] p-4"
+          class="gunshot-text text-white flex flex-col justify-center items-center bg-gradient-to-l from-[#6424B9] p-4 translatexanimation"
         >
           <strong>GUN SHOT</strong>
           <span class="flex flex-row justify-center items-center gap-[10px]"
@@ -80,7 +80,7 @@
       id="about"
       class="about w-[100%] h-[100vh] flex flex-row justify-between items-center px-[7rem] mt-8 mb-8"
     >
-      <div class="left text-white">
+      <div class="left text-white translatexanimation">
         <h2 class="text-[96px] font-[700] leading-[122.5px]">
           Play<br />Gun Shot
         </h2>
@@ -93,15 +93,15 @@
           experience of being a gun shot.
         </p>
       </div>
-      <div class="right flex flex-row justify-center items-center">
+      <div class="right flex flex-row justify-center items-center appear">
         <img src="about1.png" alt="about1" />
         <img src="about2.png" alt="about2" />
       </div>
     </section>
 
     <section id="games" class="games w-[100%] h-[100vh] mt-8 mb-8">
-        <h1 class="text-white font-bold text-[141px] text-center font-[700] text-[96px] leading-[122.5px] pb-6 ">GAMES</h1>
-        <div class="grid gap-4 grid-rows-2 grid-cols-3 m-auto w-[70%]">
+        <h1 class="text-white font-bold text-[141px] text-center font-[700] text-[96px] leading-[122.5px] pb-6 translatexanimation">GAMES</h1>
+        <div class="grid gap-4 grid-rows-2 grid-cols-3 m-auto w-[70%] appear">
             <div class="row-span-2">
                 <img src="game1.png"  alt="game1">
             </div>
@@ -116,8 +116,8 @@
     </section>
 
     <section id="contact" class="contact w-[53%] m-auto h-[100vh] mb-8 mt-8">
-        <h1 class="font-[700] text-[96px] leading-[122.5px] text-center text-white">CONTACT</h1>
-        <form action="" class="flex flex-col justify-center items-center">
+        <h1 class="font-[700] text-[96px] leading-[122.5px] text-center text-white translatexanimation">CONTACT</h1>
+        <form action="" class="flex flex-col justify-center items-center appear">
             <input type="text" name="" id="" class="mt-[20px]" placeholder="Enter Your Name">
             <input type="email" name="" id="" class="mt-[20px]" placeholder="Please Enter a Valid Email Adress">
             <textarea name="" id="" class="mt-[20px]" placeholder="Comment" rows="8"></textarea>
@@ -128,5 +128,8 @@
     <footer class="text-white w-[100%] bg-[#792CD4] flex justify-center items-center font-[400] text-[16px] leading-[24px] p-2">
         copyright © 2024 Gun Shot
     </footer>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
