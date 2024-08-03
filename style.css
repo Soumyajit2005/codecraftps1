@@ -1,60 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    font-family: "Space Grotesk", sans-serif;
-    scroll-behavior: smooth;
+body {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
 }
 
-section{
-    scroll-snap-align: start;
+section {
+  scroll-snap-align: start;
 }
 
-.completed{
-    color: rgba(255, 255, 255, 0.62);
+.completed {
+  color: rgba(255, 255, 255, 0.62);
 }
 
-nav{
-    position: sticky !important;
-    top: 2px;
-    background: #42387016;
+nav {
+  position: sticky !important;
+  top: 2px;
+  background: #42387016;
 }
 
-nav ul{
-    opacity: 0.6;
+nav ul {
+  opacity: 0.6;
 }
 
-nav ul li a{
-    transition: .5s;
-    position: relative;
+nav ul li a {
+  transition: 0.5s;
+  position: relative;
 }
 
-nav ul li a:hover{
-    color: #4c0899;
+nav ul li a:hover {
+  color: #4c0899;
 }
 
-nav ul li a span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-bottom: 2px solid #5109a4;
-    border-radius: 10px;
-    transform: scale(0) translateY(50px);
-    transition: .5s;
-    opacity: 0;
+nav ul li a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid #5109a4;
+  border-radius: 10px;
+  transform: scale(0) translateY(50px);
+  transition: 0.5s;
+  opacity: 0;
 }
 
-nav ul li a:hover span{
-    transform: scale(1) translateY(0);
-    opacity: 1;
+nav ul li a:hover span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
 }
 
 .homeImage img {
@@ -72,226 +72,232 @@ nav ul li a:hover span{
   z-index: 2;
 }
 
-.homeText span{
-    position: relative;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-     outline: none;
-    animation: animate 5s linear infinite;
+.homeText span {
+  position: relative;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  outline: none;
+  animation: animate 5s linear infinite;
 }
 
-@keyframes animate{
-    0%,18%,20%,50.1%,60.1%,65.1%,80%,90.1%,92%{
-        color: #0e3742;
-        text-shadow: none;
-    }
-    18.1%,20.1%,50%,60%,65%,80.1%,90%,92.1%,100%{
-        color: #fff;
-        text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4;
-    }
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60.1%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  50%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
 }
 
-
-.gunshot-text strong{
-    font-weight: 400;
-    font-size: 51px;
-    line-height: 62.07px;
-    font-family: "Keania One", sans-serif !important;
+.gunshot-text strong {
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 62.07px;
+  font-family: "Keania One", sans-serif !important;
 }
 
-.right img{
-    margin: 25px;
-    width: 370px;
+.right img {
+  margin: 25px;
+  width: 370px;
 }
 
-
-.contact form input, textarea{
-    background: transparent;
-    color: white !important;
-    width: 100%;
-    padding: 1.2rem !important;
-    border: 1px solid gray;
-    font-weight: 400;
-    font-size: 25px !important;
-    line-height: 31.9px;
-    outline: none;
-    border-radius: 5px;
+.contact form input,
+textarea {
+  background: transparent;
+  color: white !important;
+  width: 100%;
+  padding: 1.2rem !important;
+  border: 1px solid gray;
+  font-weight: 400;
+  font-size: 25px !important;
+  line-height: 31.9px;
+  outline: none;
+  border-radius: 5px;
 }
-
-
-
-
 
 /* Animations */
-.getAccess-button{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.getAccess-button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.getAccess-button span{
-    margin-left: 10px;
-    width: 0;
-    overflow: hidden;
-    transition: .5s;
+.getAccess-button span {
+  margin-left: 10px;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-.getAccess-button:hover span{
-    width: 30px;
+.getAccess-button:hover span {
+  width: 30px;
 }
 
-.register-button{
-    position: relative;
-
+.register-button {
+  position: relative;
 }
-.register-button::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    border: 2px solid #792cd4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    transition: top 0.5s, left 0.5s;
-}
-
-.register-button:hover{
-    background: transparent;
-    border: 2px solid #792cd4;
-    color: #792cd4;
-    padding-top: 5px;
+.register-button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid #792cd4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: top 0.5s, left 0.5s;
 }
 
-.register-button:hover::after{
-    top: 5px;
-    left: 5px;
-    box-sizing: content-box;
+.register-button:hover {
+  background: transparent;
+  border: 2px solid #792cd4;
+  color: #792cd4;
+  padding-top: 5px;
 }
 
-.vacancies-button{
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
+.register-button:hover::after {
+  top: 5px;
+  left: 5px;
+  box-sizing: content-box;
 }
 
-.vacancies-button:hover{
-    color: #fff;
+.vacancies-button {
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
 }
 
-.vacancies-button::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: #792CD4;
-    z-index: -1;
-    transition: 0.8s;
-    top: 0;
-    border-radius: 0 0 50% 50%;
+.vacancies-button:hover {
+  color: #fff;
 }
 
-.vacancies-button:hover::before{
-    height: 180%;
+.vacancies-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #792cd4;
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
 }
 
-@keyframes appear{
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
+.vacancies-button:hover::before {
+  height: 180%;
 }
 
-@keyframes translatexanimation{
-    from{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
-.translatexanimation{
-    animation: translatexanimation linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+@keyframes translatexanimation {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
-.appear{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+.translatexanimation {
+  animation: translatexanimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
+.appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
 
 /* Modal  */
-.overlay{
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    height: 100vh;
-    position: fixed;
-    top: 0%;
-    z-index: -1;
-    opacity: 0;
-    transition: 1s;
+.overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  z-index: -1;
+  opacity: 0;
+  transition: 1s;
 }
 
-.showoverlay{
-    opacity: 1;
-    z-index: 1;
+.showoverlay {
+  opacity: 1;
+  z-index: 1;
 }
 
-.loginform{
-    width: 350px;
-    background-color: white;
-    margin-bottom: 15px;
-    padding: 30px 20px;
-    position: absolute;
-    left: 50%;
-    top: -50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px 3px #ccc;
-    transition: 2s;
-    z-index: 9;
+.loginform {
+  width: 350px;
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 30px 20px;
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px 3px #ccc;
+  transition: 2s;
+  z-index: 9;
 }
 
-.showloginform{
-    top: 50%;
+.showloginform {
+  top: 50%;
 }
 
-.loginform input{
-    width: 100%;
-    height: 35px;
-    border: 1px solid black;
+.loginform input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid black;
 }
 
-.loginform button{
-    margin-top: 9px;
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
+.loginform button {
+  margin-top: 9px;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
 }
 
-.loginform span{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    background-color: green;
-    text-align: center;
-    color: white;
-    line-height: 30px;
-    cursor: pointer;
+.loginform span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  cursor: pointer;
 }
